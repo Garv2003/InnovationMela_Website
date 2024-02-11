@@ -1,5 +1,6 @@
 .scroller {
   max-width: 1000px;
+  height: 200px;
 }
 .scroller__inner {
   padding-block: 1rem;
@@ -16,7 +17,13 @@
     white 80%,
     transparent
   );
-  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+  mask: linear-gradient(
+    90deg,
+    transparent,
+    rgb(0, 0, 0) 20%,
+    rgb(0, 0, 0) 80%,
+    transparent
+  );
 }
 .scroller[data-animated="true"] .scroller__inner {
   width: max-content;
@@ -34,11 +41,11 @@
 }
 
 .scroller[data-speed="fast"] {
-  --_animation-duration: 60s;
+  --_animation-duration: 45s;
 }
 
 .scroller[data-speed="slow"] {
-  --_animation-duration: 60s;
+  --_animation-duration: 45s;
 }
 
 @keyframes scroll {
@@ -58,6 +65,8 @@
   place-content: center;
   font-family: system-ui;
   font-size: 1.125rem;
+  background-color: transparent;
+  margin: 2rem 0;
 }
 .tag-list {
   margin: 0;
@@ -66,10 +75,16 @@
 }
 .tag-list li {
   padding: 1rem;
-  background: var(--clr-primary-400);
+  /* background: var(--clr-primary-400); */
   border-radius: 0.5rem;
-  box-shadow: 0 0.5rem 1rem -0.25rem var(--clr-primary-900);
+  /* box-shadow: 0 0.5rem 1rem -0.25rem var(--clr-primary-900); */
 }
 .test {
   background: red !important;
+}
+
+.sp img {
+  height: 100px;
+  object-fit: cover;
+  margin: 0 1rem;
 }

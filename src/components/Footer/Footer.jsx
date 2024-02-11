@@ -5,9 +5,13 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="reach-us">
+        <h2 className="reach-us-heading">Reach Us</h2>
         <div className="reach-us-container">
+          <img
+            src="https://tnm.mait.ac.in/images/abstractbg/Logo_white.png"
+            alt=""
+          />
           <div className="address">
-            <img src="https://tnm.mait.ac.in/images/abstractbg/Logo_white.png" alt="" />
             <h2 className="address-line">
               MAHARAJA AGRASEN INSTITUTE OF TECHNOLOGY
             </h2>
@@ -30,7 +34,7 @@ const Footer = () => {
       </div>
       <div className="social">
         <div className="icons">
-        <a
+          <a
             href=""
             target="_blank"
             className="social-icon"
@@ -62,23 +66,14 @@ const Footer = () => {
           >
             <i className="bx bxs-envelope"></i>
           </a>
-
-
         </div>
-
-        
       </div>
-        <p className="copyright">
-          © 2024 Innovation Mela | Designed with ❤️ by &nbsp;
-          <a href="https://linkedin.com/in/JaiSukheja02"> 
-            Jai Sukheja 
-            </a> 
-            &nbsp;
-            & &nbsp;
-            <a href="https://www.linkedin.com/in/garvaggarwal05/"> 
-            Garv Aggarwal
-            </a>
-        </p>
+      <p className="copyright">
+        © 2024 Innovation Mela | Designed with ❤️ by &nbsp;
+        <a href="https://linkedin.com/in/JaiSukheja02">Jai Sukheja</a>
+        &nbsp; & &nbsp;
+        <a href="https://www.linkedin.com/in/garvaggarwal05/">Garv Aggarwal</a>
+      </p>
     </div>
   );
 };
