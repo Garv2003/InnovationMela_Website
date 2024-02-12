@@ -1,4 +1,3 @@
-import React from "react";
 import ContactBox from "../components/ContactBox/ContactBox";
 
 const Contact = () => {

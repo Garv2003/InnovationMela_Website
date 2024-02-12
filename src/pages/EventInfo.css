@@ -2,6 +2,7 @@
   width: 80%;
   margin: auto;
   margin-bottom: 2rem;
+  font-family: inherit;
 }
 .event_info h1 {
   font-size: 4rem;
@@ -21,7 +22,6 @@
 }
 
 .event_info ul {
-  width: 80%;
   margin: auto;
   list-style-type: circle;
   padding: 0;
@@ -91,6 +91,7 @@
   box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
   position: relative;
   font-weight: 600;
+  margin-bottom: 20px;
 }
 
 /* .neon-button::before {
@@ -134,4 +135,36 @@
 .neon-button:hover::after,
 .neon-button:focus::after {
   opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .event_info {
+    width: 100%;
+    padding: 0 20px;
+    text-align: center;
+  }
+  .event_info img {
+    height: 300px;
+  }
+  .event_info h1 {
+    font-size: 3rem;
+  }
+  .event_info ul li {
+    font-size: 1.2rem;
+  }
+  .event_rules h4 {
+    font-size: 1.5rem;
+  }
+  .event_rules ul li {
+    font-size: 1.2rem;
+  }
+  .rounds h2 {
+    font-size: 1.5rem;
+  }
+  .rounds ul li {
+    font-size: 1.2rem;
+  }
+  .neon-button {
+    font-size: 1.2rem;
+  }
 }
